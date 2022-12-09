@@ -1,0 +1,57 @@
+/* game board table */
+body {
+    background-image: url(https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?cs=srgb&dl=pexels-pixabay-53594.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#board td {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.coin {
+    /* TODO: make into circles */
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px
+
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.c1 {
+    background-color: blue;
+}
+
+.c2 {
+    background-color: red;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+    border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+    background-color: gold;
+}
+
+#game {
+    background-color: rgb(95, 168, 250);
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        border-radius: 40px;
+        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.281);
+        position: relative;
+            margin: 20px auto;
+            width: 400px;
+    
+}
